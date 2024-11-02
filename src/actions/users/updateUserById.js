@@ -1,4 +1,4 @@
-import userData from "src/data/users.json" assert { type: "json" };
+import userData from "../../data/users.json" assert { type: "json" };
 
 const updateUserById = (id, username, password, name, image) => {
   const user = userData.users.find((user) => user.id === id);

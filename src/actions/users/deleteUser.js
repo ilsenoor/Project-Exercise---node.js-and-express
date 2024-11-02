@@ -1,4 +1,4 @@
-import userData from "src/data/users.json" assert { type: "json" };
+import userData from "../../data/users.json" assert { type: "json" };
 
 const deleteUser = (id) => {
   const index = userData.users.findIndex((user) => user.id === id);
@@ -6,7 +6,7 @@ const deleteUser = (id) => {
     throw new Error(`User with ${id} not found`);
   }
 
-  userData.books.splice(index, 1);
+  userData.users.splice(index, 1);
   return id;
 };
 

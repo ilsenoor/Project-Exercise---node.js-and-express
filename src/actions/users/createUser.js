@@ -1,7 +1,7 @@
-import userData from "src/data/users.json" assert { type: "json" };
+import userData from "../../data/users.json" assert { type: "json" };
 import { v4 as uuid } from "uuid";
 
-const createUser = (id, username, password, name, image) => {
+const createUser = (username, password, name, image) => {
   const newUser = {
     id: uuid(),
     username,
